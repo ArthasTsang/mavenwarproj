@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp">
+    
+	<display-name>IBRWeb</display-name>
+        
+	<servlet>
+		<servlet-name>DashboardQuickSummaryServlet</servlet-name>
+		<display-name>DashboardQuickSummaryServlet</display-name>
+		<servlet-class>com.siebel.service.dashboard.DashboardQuickSummaryServlet</servlet-class>
+		<load-on-startup>-1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EnquiryEstatementSubscription</servlet-name>
+		<url-pattern>/EnquiryEstatementSubscription</url-pattern>
+	</servlet-mapping>          
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>default_error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>webpage_not_found.html</location>
+	</error-page>
+
+</web-app>
